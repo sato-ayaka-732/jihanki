@@ -10,7 +10,6 @@ for (let i = 0; i < drinks.length; i++) {
         console.log(drinks[i].alt + " がクリックされました！");
     });
 }
-const drinks = document.querySelectorAll('.drink');
 
 for (let i = 0; i < drinks.length; i++) {
     const drink = drinks[i];
@@ -22,6 +21,12 @@ for (let i = 0; i < drinks.length; i++) {
     // drink の前に wrapper を挿入してから drink を移動
     drink.parentNode.insertBefore(wrapper, drink);
     wrapper.appendChild(drink);
+
+    // 価格表示
+    const priceElement = document.createElement('div');
+    priceElement.className = 'price';
+    priceElement.textContent = drink.dataset.price;
+    wrapper.appendChild(priceElement);
 
     // ボタンを作って wrapper に追加
     const button = document.createElement('button');
