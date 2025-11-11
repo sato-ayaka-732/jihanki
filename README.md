@@ -9,5 +9,4 @@
 <img width="1853" height="830" alt="スクリーンショット 2025-11-11 11 31 17" src="https://github.com/user-attachments/assets/3309487b-574d-4af1-b1c4-f3b8c3351012" />
 
 2. 飲み物を並べて、画像にする（d401576）
-3. 
-4. 
+  <img width="1894" height="914" alt="スクリーンショット 2025-11-11 15 11 27" src="https://github.com/user-attachments/assets/50ce0f05-e019-499a-b095-3c5a61055495" />
