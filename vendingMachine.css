@@ -1,0 +1,86 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.box {
+    width: 400px;
+    height: 500px;
+    background-color: red;
+    border: 1px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative; 
+}
+
+.diag {
+    position: absolute;
+    left: 4%;
+    top: 4%;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    transform-origin: top left;
+    z-index: 0;
+}
+
+/* ドリンク要素を前面に出す */
+.drink-item, .drink {
+    position: relative;
+    z-index: 1;
+}
+
+.drink-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    position: relative;
+    overflow: visible;
+}
+
+.drink {
+    width: 90px;
+    height: 120px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.3s;
+    text-align: center;
+    font-weight: bold;
+}
+
+.drink-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+}
+
+.drink-btn {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
+    background: blue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.price {
+    font-size: 14px;
+    color: black;
+    background: transparent;
+    padding: 2px 4px;
+}
