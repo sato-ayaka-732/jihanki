@@ -1,23 +1,52 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <title>自動販売機をプログラムで書いてみよう！</title>
-    <link rel="stylesheet" href="vendingMachine.css">
+  <meta charset="UTF-8">
+  <title>自動販売機（見た目だけ）</title>
+  <link rel="stylesheet" href="vendingMachine.css">
 </head>
-
 <body>
-    <div class="box">
-        <div class="drink-list">
-            <img src="img/cola.svg" alt="コーラ" class="drink" data-price="¥120">
-            <img src="img/soda.png" alt="ソーダ" class="drink" data-price="¥120">
-            <img src="img/coffee.png" alt="コーヒー" class="drink" data-price="¥100">
+  <div class="box">
+    <div class="display">
+      <p>投入金額:<span id="money"> 0</span>円</p>
+      <p>購入数:<span id="purchaseCount"> 0</span>本</p>
+
+      <div class="drink-list">
+        <!-- コーラ -->
+        <div class="drinkItem">
+          <div class="drink">
+            <img src="img/cola.svg" alt="コーラ" width="60">
+          </div>
+          <div class="price">120円</div>
+          <button class="drinkButton">購入</button>
         </div>
 
+        <!-- ソーダ -->
+        <div class="drinkItem">
+          <div class="drink">
+            <img src="img/soda.png" alt="ソーダ" width="60">
+          </div>
+          <div class="price">130円</div>
+          <button class="drinkButton">購入</button>
+        </div>
+
+        <!-- コーヒー -->
+        <div class="drinkItem">
+          <div class="drink">
+            <img src="img/coffee.png" alt="コーヒー" width="60">
+          </div>
+          <div class="price">150円</div>
+          <button class="drinkButton">購入</button>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="insertButton" class="controlButton">100円入れる</button>
+        <button id="returnButton" class="controlButton returnButton">返金</button>
+      </div>
+
+      <div id="message" class="message">メッセージエリア</div>
     </div>
-
-    <script src="vendingMachine.js"></script>
+  </div>
 </body>
-
 </html>
