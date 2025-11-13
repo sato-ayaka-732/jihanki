@@ -1,100 +1,124 @@
 body {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  background: #eee;
-  font-family: "Arial", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .box {
-  width: 400px;
-  height: 520px;
-  background-color: red;
-  border: 2px solid black;
-  border-radius: 15px;
-  text-align: center;
-  padding-top: 20px;
-  position: relative;
-  color: white;
+    width: 400px;
+    height: 520px;
+    background-color: red;
+    border: 2px solid black;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
 }
 
 .display p {
-  margin: 4px 0;
-  font-weight: bold;
+    margin: 4px 0;
+    font-weight: bold;
 }
 
-.drink-list {
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-top: 20px;
+.drink-list1, .drink-list2 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: nowrap;
 }
 
 .drinkItem {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 4px;
-  background: white;
-  border-radius: 8px;
-  padding: 8px;
-  width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    width: 30px;
 }
 
 .drink {
-  background: #f9f9f9;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  width: 70px;
-  height: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.price {
-  font-size: 14px;
-  color: black;
-  font-weight: bold;
+    background-color: white;
+    border-radius: 8px;
+    width: 70px;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .drinkButton {
-  padding: 6px 10px;
-  background: blue;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 12px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
 }
 
-.controls {
-  margin-top: 20px;
-}
-
-.controlButton {
-  background: yellow;
-  border: 1px solid black;
-  border-radius: 6px;
-  padding: 8px 16px;
-  margin: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  color: black;
-}
-
-.returnButton {
-  background: orange;
+.price {
+    font-size: 14px;
+    color: black;
+    background: white;
+    border-radius: 2px;
+    padding: 0px 5px 0px 5px;
 }
 
 .message {
-  margin-top: 10px;
-  background: white;
-  color: black;
-  border-radius: 6px;
-  padding: 5px;
-  font-size: 14px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 6px;
+    padding: 10px 20px;
+    font-size: 14px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    min-width: 200px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 0;
+    margin-right: 25px;
+    margin-bottom: 30px;
+}
+
+.moneyWindow {
+    width: 80px;
+    height: 30px;
+    border-radius: 8px;
+    background-color: black;
+    color: lime;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+
+.returnBox {
+    width: auto;
+    height: 100px;
+    background: gray;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.controlButton {
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.controlButton img {
+    display: block;
 }
