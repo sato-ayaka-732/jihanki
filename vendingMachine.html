@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>自動販売機をプログラムで書いてみよう！</title>
+    <link rel="stylesheet" href="vendingMachine.css">
+</head>
+
+<body>
+    <div class="box">
+        <!-- <div class="display">
+            <p>投入金額:<span id="money"> 0</span>円</p>
+            <p>購入数:<span id="purchaseCount"> 0</span>本</p> -->
+
+        <!-- drink-list1はベタがき-->
+        <div class="drink-list1">
+
+            <div class="drinkItem">
+                <div class="drink">
+                    <img src="img/cola.svg" alt="コーラ" width="60">
+                </div>
+                <div class="price">¥120</div>
+                <button class="drinkButton">
+                    <img src="img/normal.png" alt="購入" width="30">
+                </button>
+            </div>
+
+            <div class="drinkItem">
+                <div class="drink">
+                    <img src="img/soda.png" alt="ソーダ" width="60">
+                </div>
+                <div class="price">¥130</div>
+                <button class="drinkButton">
+                    <img src="img/normal.png" alt="購入" width="30">
+                </button>
+            </div>
+
+            <div class="drinkItem">
+                <div class="drink">
+                    <img src="img/coffee.png" alt="コーヒー" width="40">
+                </div>
+                <div class="price">¥150</div>
+                <button class="drinkButton">
+                    <img src="img/normal.png" alt="購入" width="30">
+                </button>
+            </div>
+
+            <div class="drinkItem">
+                <div class="drink">
+                    <img src="img/coffee.png" alt="コーヒー" width="40">
+                </div>
+                <div class="price">¥150</div>
+                <button class="drinkButton">
+                    <img src="img/normal.png" alt="購入" width="30">
+                </button>
+            </div>
+
+            <div class="drinkItem">
+                <div class="drink">
+                    <img src="img/coffee.png" alt="コーヒー" width="40">
+                </div>
+                <div class="price">¥150</div>
+                <button class="drinkButton">
+                    <img src="img/normal.png" alt="購入" width="30">
+                </button>
+            </div>
+
+        </div>
+
+        <!-- TODOdrink-list2はjsでループで動的に回したい -->
+        <div class="drink-list2"></div>
+
+        <div class="controls">
+            <div class="moneyColumn">
+                <div class="moneyWindow">
+                    <span id="moneyDisplay">¥0</span>
+                </div>
+            </div>
+
+            <button id="insertButton" class="controlButton">
+                <img src="img/coinslot.PNG" alt="100円を入れる" width="25">
+            </button>
+            <button id="returnButton" class="controlButton returnButton">
+                <img src="img/return.png" alt="返金ボタン" width="30">
+            </button>
+
+        </div>
+
+        <div class="returnBox"></div>
+        <div id="message" class="message"></div>
+        <script src="vendingMachine.js"></script>
+</body>
+
+</html>
